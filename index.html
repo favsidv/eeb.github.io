@@ -2,8 +2,43 @@
 <html>
   <head>
     <title>Home</title>
+    <style>
+      body {
+        display: block;
+        position: absolute;
+        width: 100vw;
+        overflow-x: hidden;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: black;
+        text-align: center; /* Center text horizontally */
+      }
+      .video-container {
+        position: relative;
+        width: 80%;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        margin: 0 auto;
+      }
+      .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      h1 {
+        color: white;
+        font-size: 2vw;
+        margin: 50px 100px 0 100px;
+      }
+    </style>
   </head>
-  <body style="display:block;position:absolute;width:100vw;overflow-x:hidden;margin:0;box-sizing:border-box;background-color:black;">
+  <body>
+    <h1>Should AI be used to design and execute military strategies without human intervention?</h1>
+    <div class="video-container">
+      <iframe src="englishvideo.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
     <img src="bg.jpg" style="width:100%;height:auto;">
   </body>
 </html>
